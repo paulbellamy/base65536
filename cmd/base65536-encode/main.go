@@ -31,6 +31,7 @@ func main() {
 	log.SetPrefix(prog + ": ")
 
 	flag.Usage = usage
+	comma := flag.Bool("comma", false, "Add commas between pair of words")
 	flag.Parse()
 
 	if flag.NArg() != 0 {
@@ -44,13 +45,17 @@ func main() {
 	}
 	buf := &bytes.Buffer{}
 	first := true
-	for _, word := range base65536.Encode(data) {
+	words := base65536.Encode(data)
+	for i, word := range words {
 		if first {
 			first = false
 		} else {
 			buf.WriteString(" ")
 		}
 		buf.WriteString(word)
+		if *comma && i%2 == 1 && i != len(words)-1 {
+			buf.WriteString(",")
+		}
 		if buf.Len() > 70 {
 			buf.WriteString("\n")
 			buf.WriteTo(os.Stdout)

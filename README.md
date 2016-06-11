@@ -8,9 +8,10 @@ alternating, to encode binary data in a human-memorable format.
 ## Example
 
 ```
-$ echo hello, world! | base65536-encode
-visible user exciting communication realistic area significant location
-realistic nation exciting marriage successful system
+$ echo hello, world! | base65536-encode -comma
+serious thing, critical activity, impossible activity, impossible activity,
+serious system, huge media, critical activity, serious safety, immediate
+activity, huge thing, nice media, typical thing, system
 ```
 
 ## TODO
