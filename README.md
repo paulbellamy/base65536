@@ -9,14 +9,16 @@ alternating, to encode binary data in a human-memorable format.
 
 ```
 $ echo hello, world! | base65536-encode -comma
-serious thing, critical activity, impossible activity, impossible activity,
-serious system, huge media, critical activity, serious safety, immediate
-activity, huge thing, nice media, typical thing, system
+important internet, popular idea, various sea, eager community, various
+story, popular love, empty dust
 ```
 
 ## TODO
 
-* Use shorter words! NOTE: This will break backwards compatibility!
 * Allow custom dictionaries
 * Decoding
 * Experiment with adverbs/etc
+* Experiment with uneven slicing
+  * different number of bytes for nouns vs adjectives
+    * e.g. have 256 adjectives, and 1024 nouns
+    * or slice over >2 bytes (2 sets of 12? for 4096 of each?)
