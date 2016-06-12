@@ -13,6 +13,12 @@ important internet, popular idea, various sea, eager community, various
 story, popular love, empty dust
 ```
 
+## But, why?
+
+Sometimes it's nice to have a friendly way of transferring, and
+remembering small bits of binary data. For example, the bytes
+representing `127.0.0.1` encode to: `traditional bird able blossom`
+
 ## TODO
 
 * Allow custom dictionaries
