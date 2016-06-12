@@ -13,7 +13,8 @@ func ExampleEncode() {
 	} {
 		fmt.Println(net.IP(ip), strings.Join(Encode(ip), " "))
 	}
-	// Output: 127.0.0.1 wooden people different history
+	// Output:
+	// 127.0.0.1 traditional bird able blossom
 }
 
 func TestEncode_OddLengths(t *testing.T) {
