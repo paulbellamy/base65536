@@ -1,5 +1,6 @@
 package base65536
 
+// Encode returns the base65536 encoding of src (a list of words).
 func Encode(src []byte) []string {
 	dstSize := len(src)
 	dst := make([]string, dstSize, dstSize)

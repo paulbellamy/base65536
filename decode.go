@@ -8,6 +8,10 @@ func (e CorruptInputError) Error() string {
 	return "illegal base65536 data at input word " + strconv.FormatInt(int64(e), 10)
 }
 
+// Decode returns the bytes represented by the base65536 words in src.
+//
+// It returns at most len(src) bytes. If src contains invalid base65536 data,
+// it will return CorruptInputError.
 func Decode(src []string) ([]byte, error) {
 	if len(src) == 0 {
 		return nil, nil
