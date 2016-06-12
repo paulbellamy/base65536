@@ -16,7 +16,6 @@ story, popular love, empty dust
 ## TODO
 
 * Allow custom dictionaries
-* Decoding
 * Experiment with adverbs/etc
 * Experiment with uneven slicing
   * different number of bytes for nouns vs adjectives

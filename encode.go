@@ -1,7 +1,7 @@
 package base65536
 
 func Encode(src []byte) []string {
-	dstSize := (len(src) * 2) / 2
+	dstSize := len(src)
 	dst := make([]string, dstSize, dstSize)
 	for i := 0; i < len(src)-1; i += 2 {
 		dst[i] = adjectives[src[i]]
