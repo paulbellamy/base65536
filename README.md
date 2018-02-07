@@ -27,3 +27,4 @@ representing `127.0.0.1` encode to: `traditional bird able blossom`
   * different number of bytes for nouns vs adjectives
     * e.g. have 256 adjectives, and 1024 nouns
     * or slice over >2 bytes (2 sets of 12? for 4096 of each?)
+* Error-checking codes
